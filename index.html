@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Payment Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <h1 class="main-heading">payment form</h1>
+        <h2 class="second-main">Contact Information</h2>
+        <h2>Following fields are required by *</h2>
+        <p>Fullname:*<input type="text" name="name" required /></p>
+        <fieldset>
+          <legend>Gender *</legend>
+          <p>
+            male <input type="radio" name="gender" id="male" required />Female
+            <input type="radio" name="gender" id="female" required />
+          </p>
+        </fieldset>
+        <p>
+          Address:
+          <textarea name="address" id="address" cols="30" rows="10"></textarea>
+        </p>
+        <p>Email:*<input type="email" name="emaill" id="email" required /></p>
+        <p>Pin:* <input type="number" name="pin" id="pin" required /></p>
+
+        <h2 class="payment">Payment Method</h2>
+        <p>
+          Card type:*
+          <select name="card-type" id="card-type" required>
+            <option value="master card">Master Card</option>
+            <option value="visa card">Visa Card</option>
+            <option value="verve card">Verve Card</option>
+          </select>
+        </p>
+        <p>
+          Account Details *
+          <select name="account-details" id="account-details">
+            <option value="saving">Saving Account</option>
+            <option value="current">Current Account</option>
+            <option value="fixed">Fixed Account</option>
+          </select>
+        </p>
+        <p>
+          Card Number:*
+          <input type="number" name="card-number" id="card-number" required />
+        </p>
+        <p>
+          Expiration Date : *
+          <input type="date" name="exp-date" id="exp-date" required />
+        </p>
+        <p>CW * <input type="password" name="cvv" id="cvv" required /></p>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
